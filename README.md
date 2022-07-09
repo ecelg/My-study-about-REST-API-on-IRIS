@@ -21,7 +21,7 @@ OK, I decided to start with sth common, the REST api
 ### For my understanding, in the REST world we can be the HOST or client
 Just like joining a party, being a guest (client) is always more relax than being a host. <br>
 To be a guest, you just simply dress up, prepare some food, or take a brunch of flower and attend the party.<br>
-To be a host, hahahha tons of work to do... setup the place, prepare the F&B, deciede the run down, and the most tragic things ------- do the claening after party.<br>
+To be a host, hahahha tons of work to do... setup the place, prepare the F&B, deciede the run down, and the most tragic things ------- do the cleaning after party.<br>
 <br>
 Conceptraly, things should be similar in building a Host or a client.<br>
 But for me, a poor program writer, I found that it is more difficult for me to build a REST client on IRIS than building a host <br>
