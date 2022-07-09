@@ -37,5 +37,14 @@ That's why triggered me to write down sth. I am pretty sure that I will forget t
 |2| Connect the REST API interface to IRIS production| this allow you to commumate with the other system connected to IRIS within the production environment|
 |3| Setup a REST API client interface on IRIS production| this allow the other systems connected to IRIS within the production environment talk to you|
 
-
-Visit https://learning.intersystems.com/course/view.php?id=1298
+You can easliy learn **session 1 and 2** from the online learning service from InterSystems by <br>
+Visit the course **Setting Up RESTful Services** https://learning.intersystems.com/course/view.php?id=1298 <br>
+And it have quite a lot pages to talk about in on the online document<br>
+**REST and JSON**https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=PAGE_rest_json<br>
+But I must say sorry to the writter, I can undertand the word, I can understand the sentenses, but I don't know how to make it work!!!<br>
+So I went back to the online learning<br>
+<br>
+But you can only find the information about **session 3** from the online document<br>
+**Creating REST Operations in Productions**https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=EREST_operation <br>
+only 1 page .... maybe it is good enough for you... but it is tooo hard for me to understand what is happening....<br>
+Anyway, let's go 
