@@ -118,25 +118,42 @@ So now lets move on to my work. In my API spec [klAPI.spec.json](https://github.
 |/company|post|id|a schema definitions of **Company**|the data of a specify company with the specifi id will be update according tho the JSON string you upload|
 |/company|delete|id||delete the compnay object by its id, i don't like it|
 
+so what is a schema definitions of **Company**, it looks like the following<br>
+it descibe the what is my company object looks like
 
 ```
-    "/allcompanies":{
-      "get":{
-        "description":"Returns all companies\n",
-        "operationId":"QueryAllCompany",
-        "produces":[
-          "application/json"
-        ],
-        "parameters":[
-        ],
-        "responses":{
-          "200":{
-            "description":"Success"
-          },
-          "500":{
-            "description":"Server error"
-          }
+"definitions":{
+    "Company":{
+      "type":"object",
+      "properties":{
+        "Name":{
+          "type":"string"
+        },
+        "WebURL":{
+          "type":"string"
+        },
+        "Description":{
+          "type":"string"
+        },
+        "Remark":{
+          "type":"string"
+        },
+        "EstablishYear":{
+          "type":"integer"
         }
       }
     }
+```
+
+So when we want to talk about it in JSON fromat, we can follow the above standard<br>
+For example
+
+```
+{
+    "Name": "InterSystems",
+    "WebURL": "https://www.intersystems.com/",
+    "Description": "",
+    "Remark": "",
+    "EstablishYear": 1978
+}
 ```
