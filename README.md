@@ -93,4 +93,6 @@ Seems very simple, right, maybe... yes.. if you know the trick.<br>
 The very begining step, we should prepare a API spec file to describe what is you REST api looks like<br>
 What I heard is that there is a standard [Swagger Standard](https://swagger.io/specification) for writing a spec file.<br>
 If you are using this standard to make a spec file, it is more likely that your spec can be read easily by most of the API management software in the market (I guess, otherwise, why do we need a standard??).<br>
-I have prepared mine here [klAPI.spec.json](https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/Company.cls)<br>
+I have prepared mine here [klAPI.spec.json](https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/klAPI.spec.json)<br>
+<br>
+I am sorry to let you know that this is my 1st time to write a API spec (yes API spec, not specific to REST). I was so excited and just want to take some of the code to here and explain what I am doing.<br>
