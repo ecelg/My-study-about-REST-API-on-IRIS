@@ -145,7 +145,7 @@ it descibe the what is my company object looks like
     }
 ```
 
-So when we want to talk about it in JSON fromat, we can follow the above standard<br>
+So when we want to talk about it in JSON fromat, we can follow the above standard and to make sth in the body<br>
 For example
 
 ```
@@ -157,3 +157,9 @@ For example
     "EstablishYear": 1978
 }
 ```
+
+Ok the spec is ready! Let's move on to the next step<br>
+<br>
+### Step2 : upload the API specification to IRIS
+--------------------
+
