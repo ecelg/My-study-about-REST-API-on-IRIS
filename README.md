@@ -78,3 +78,12 @@ graph TD;
       Company
     end;
 ```
+
+To make the REST interface for accessing my **company** objects, we will go through the following steps
+- Step1 : make a API specification
+- Step2 : upload the API specification to IRIS
+- Step3 : create a web application on IRIS
+- Step4 : implement the API operation method
+- Step5 : .... seems no more, maybe play around and enjoy...
+
+Seems very simple, right, maybe... yes.. if you know the trick.<br>
