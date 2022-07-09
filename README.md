@@ -50,4 +50,24 @@ only 1 page .... maybe it is good enough for you... but it is tooo hard for me t
 Anyway, let's go 
 
 ## Session 1 - Setup a REST API host interface on IRIS
+Before making a REST interface, I created an object **Company** on my IRIS platfrom.<br>
+Initally, I really hope that to have place to store the WebURL if different compnay, just like a phonebook.<br>
+And I can search for them in the future, and actually I have made a UI for query, select and update this **Company** object by Python tkinter and nativeAPI.<br>
+But suddently, I sth come up in my mind. Maybe, or might be, or it might likely to be, the data sbd found that the data inside my **Company** object is very useful for them too!!!!<br>
+Ohhhhh it is such a good news! I should let them join my party and help to maintain the data!!<br>
+That's the reason I want to setup a REST API for accessing my object **Company**
+```
+Class KLlibrary.BObj.Company Extends (%Persistent, %JSON.Adaptor)
+{
+Property Name As %String [ Required ];
+Index NameIndex On Name;
+Property WebURL As %String(MAXLEN = 300);
+Property Description As %String(MAXLEN = 2000);
+Property Remark As %String;
+Property EstablishYear As %Integer;
+}
+```
+You can see that my **Company** extended 2 objects, %Persistent and %JSON.Adaptor
+- %Persistent allows us to %New() the company objects and %Save() them in the IRIS database
+- %JSON.Adaptor all ows us to use the method under the %JSON.Adaptor, normally, it is not a must to include it. <br>In our case, we are going to work on the REST API and it is more easy to package our data into a JSON string and send it out (or take them in). So it's better have this little tools
 
