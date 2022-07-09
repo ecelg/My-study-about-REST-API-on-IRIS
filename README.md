@@ -107,7 +107,7 @@ I think that you might know that there are a few basic elements in the REST api 
 |body| this one will be useful if you want to update some data about your target.<br> an example, your agent introduced a ***long hair*** boy and you found that he cut his hair recently. You may call your agent and update ***the status of the boy***  in the ***conversation*** **(body)** |
 
 <br>
-So now lets move on to my work. In my API spec [klAPI.spec.json](https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/klAPI.spec.json) I defined the following operations <br>
+So now lets move on to my work. In my API spec [klAPI.spec.json] (https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/klAPI.spec.json).<br> I defined the following operations <br>
 <br>
 
 |path|method|parameter|body| |
