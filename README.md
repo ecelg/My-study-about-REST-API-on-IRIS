@@ -168,9 +168,9 @@ In here I won't explain much about this man, as I am not very familiar with him.
 For me, he is doing a great job especially when I testing my API (I can **get** sth from browser, but i don't know how to **post** sth by browser. He helps.)<br>
 <br>
 Anyway, come back to the topic. I was told that <br>
-> you can query the API Management service in your instance of InterSystems IRIS. Send the following HTTP GET request, replacing [YourServer] with the address from the launcher above
-> GET http://[YourServer]/api/mgmnt/
-> basic Authentiction is required
+> you can query the API Management service in your instance of InterSystems IRIS. Send the following HTTP GET request, replacing [YourServer] with the address from the launcher above <br>
+> **GET** http://[YourServer]/api/mgmnt/ <br>
+> basic Authentiction is required <br>
 
 In order to test if my API Management service is working. Let's check it out by my ***Postman*** (if the  API Management service is not working, we cannot upload our API spec) <br>
 
