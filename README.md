@@ -99,10 +99,12 @@ I am sorry to let you know that this is my 1st time to write a API spec (yes API
 <br>
 Let's talk about sth inside the path defination<br>
 I think that you might know that there are a few basic elements in the REST api for helping you to describe what kind of actions you want to do
-- path: in my point of view, it looks like to tell the host what is the target of this action
-- method: e.g. "get", "post", "put", "delete", tell the host what kind of operation you are going to do with this target
-- parameters: tell the host more specific stuff about this target. just take <br> an example, if you tell your dating agent that I want to **get**(method) **boys**(path). You agent might introduce all the boys on the list to you. Do you think you have time to date them all? So now, you need to say **long hair** (parameter) plx. Then the result will be much more specific.
-- body: this one will be useful if you and to update some data to your target.<br> an example, your agent introduced a **long hair** boy and you found that he cut his hair recently. You may call your agent and update **the status of the boy**  in the **conversation** (body) 
+|element|In my point of view|
+|---|---|
+|path| it looks like to tell the host what is the target of this action|
+|method| e.g. "get", "post", "put", "delete", tell the host what kind of operation you are going to do with this target|
+|parameters| tell the host more specific stuff about this target. just take <br> an example, if you tell your dating agent that I want to **get**(method) **boys**(path). You agent might introduce all the boys on the list to you. Do you think you have time to date them all? So now, you need to say **long hair** (parameter) plx. Then the result will be much more specific.|
+|body| this one will be useful if you want to update some data about your target.<br> an example, your agent introduced a **long hair** boy and you found that he cut his hair recently. You may call your agent and update **the status of the boy**  in the **conversation** (body) |
 
 ```
     "/allcompanies":{
