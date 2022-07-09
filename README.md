@@ -28,4 +28,14 @@ But for me, a poor program writer, I found that it is more difficult for me to b
 The reason is simply becasuse there are planty of resourse which teach you how to build a host (maybe they think building a host is a more complex concept, and you may need more guidience) <br>
 For me, however, for the simple thing, I need gudience also ...... I am not good a coding.. not even the relationship between HTTP and REST ok?<br>
 Although I found out an easy way to build a clinet, but it was not easy for me (at least for me) to find that way. <br>
-That's why triggered me to write down sth. I am pretty sure that I will forget totally in the future, if I didn't write down any hints for myself.
+That's why triggered me to write down sth. I am pretty sure that I will forget totally in the future, if I didn't write down any hints for myself.<br>
+
+## In my study, I divided in to 3 sessions
+| |Session|Description|
+|---|---|---|
+|1| Setup a REST API host interface on IRIS| this allow you to access objects/table in IRIS directly |
+|2| Connect the REST API interface to IRIS production| this allow you to commumate with the other system connected to IRIS within the production environment|
+|3| Setup a REST API client interface on IRIS production| this allow the other systems connected to IRIS within the production environment talk to you|
+
+
+Visit https://learning.intersystems.com/course/view.php?id=1298
