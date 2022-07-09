@@ -50,12 +50,12 @@ only 1 page .... maybe it is good enough for you... but it is tooo hard for me t
 Anyway, let's go 
 
 ## Session 1 - Setup a REST API host interface on IRIS
-Before making a REST interface, I created an object **Company** on my IRIS platfrom.<br>
+Before making a REST interface, I created an object class **Company** on my IRIS platfrom.<br>
 Initally, I really hope that to have place to store the WebURL if different compnay, just like a phonebook.<br>
-And I can search for them in the future, and actually I have made a UI for query, select and update this **Company** object by Python tkinter and nativeAPI.<br>
-But suddently, I sth come up in my mind. Maybe, or might be, or it might likely to be, the data sbd found that the data inside my **Company** object is very useful for them too!!!!<br>
+And I can search for them in the future, and actually I have made a UI for query, select and update these **Company** objects by Python tkinter and nativeAPI.<br>
+But suddently, I sth come up in my mind. Maybe, or might be, or it might likely to be, the data sbd found that the data inside my **Company** objects are very useful for them too!!!!<br>
 Ohhhhh it is such a good news! I should let them join my party and help to maintain the data!!<br>
-That's the reason I want to setup a REST API for accessing my object **Company**
+That's the reason I want to setup a REST API for accessing my **Company** objects
 ```
 Class KLlibrary.BObj.Company Extends (%Persistent, %JSON.Adaptor)
 {
@@ -67,7 +67,14 @@ Property Remark As %String;
 Property EstablishYear As %Integer;
 }
 ```
-You can see that my **Company** extended 2 objects, %Persistent and %JSON.Adaptor
+You can see that my **Company** class extended 2 objects, %Persistent and %JSON.Adaptor
 - %Persistent allows us to %New() the company objects and %Save() them in the IRIS database
-- %JSON.Adaptor all ows us to use the method under the %JSON.Adaptor, normally, it is not a must to include it. <br>In our case, we are going to work on the REST API and it is more easy to package our data into a JSON string and send it out (or take them in). So it's better have this little tools
+- %JSON.Adaptor allows us to use the method under the %JSON.Adaptor, normally, it is not a must to include it. <br>In our case, we are going to work on the REST API and it is more easy to package our data into a JSON string and send it out (or take them in). So it's better have this little tools
 
+So now, I have a company class on IRIS
+```mermaid
+graph TD;
+    subgraph IRIS;
+      Company
+    end;
+```
