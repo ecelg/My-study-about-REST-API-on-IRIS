@@ -113,6 +113,10 @@ So now lets move on to my work. In my API spec [klAPI.spec.json](https://github.
 |path|method|parameter|body| |
 |---|---|---|---|---|
 |/allcompanies|get| | | by using this operation a list of all companies data will be return in JSON format|
+|/newcompany|post||a schema definitions of **Company**| Add a new compnay object. puting a String in JSON format to describe the company that you are going to add. and post it to the host|
+|/company|get|id||get the data of a specify company by its id, the data of the target company will be return in JSON format|
+|/company|post|id|a schema definitions of **Company**|the data of a specify company with the specifi id will be update according tho the JSON string you upload|
+|/company|delete|id||delete the compnay object by its id, i don't like it|
 
 
 ```
