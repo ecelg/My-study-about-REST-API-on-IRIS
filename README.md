@@ -107,7 +107,7 @@ I think that you might know that there are a few basic elements in the REST api 
 |body| this one will be useful if you want to update some data about your target.<br> an example, your agent introduced a ***long hair*** boy and you found that he cut his hair recently. You may call your agent and update ***the status of the boy***  in the ***conversation*** **(body)** |
 
 <br>
-So now lets move on to my work. In my API spec [klAPI.spec.json] (https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/klAPI.spec.json).<br> I defined the following operations <br>
+So now lets move on to my work. In my API spec [klAPI.spec.json](https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/klAPI.spec.json).<br> I defined the following operations <br>
 <br>
 
 |path|method|parameter|body| |
@@ -173,4 +173,15 @@ Anyway, come back to the topic. I was told that <br>
 > basic Authentiction is required <br>
 
 In order to test if my API Management service is working. Let's check it out by my ***Postman*** (if the  API Management service is not working, we cannot upload our API spec) <br>
+1st, I setup a basic authorization with my IRIS login and password<br>
 
+![BasicAuth](https://user-images.githubusercontent.com/107917928/178144143-68121f1b-1e13-4e08-926a-de5b1b52de5d.png)
+
+As my postman is living in the same host of IRIS with port 52773 <br>
+So I **Get** the path http://localhost:52773/api/mgmnt/
+
+![getAPImanagement](https://user-images.githubusercontent.com/107917928/178144231-630e0322-3ccd-449a-97d6-d2030f6a3cbd.png)
+
+We can see some information of the interfaces return.. so I assume it should be working.<br>
+<br>
+Now, we can upload our spec!!
