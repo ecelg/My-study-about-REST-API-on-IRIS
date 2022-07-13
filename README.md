@@ -305,9 +305,10 @@ ClassMethod EditCompanyById(id As %Integer, body As %Stream.Object, prod As %Boo
 	    }
     }
 }
+
 ```
 
-<br>
+
 After we implemented all of the function in the klAPI.impl.cls, we can test it out by postman
 list the following example<br>
 ![testupdateCompanybyRESTAPI](https://user-images.githubusercontent.com/107917928/178761815-ab1a4d70-e6bd-4412-acb9-516b910012cb.png)
