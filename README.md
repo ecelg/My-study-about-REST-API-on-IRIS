@@ -188,6 +188,14 @@ Now, we can upload our spec!!<br>
 **POST** the path to http://localhost:52773/api/mgmnt/v2/KATEDB/klAPI<br>
   KATEDB <-- Namespace <br>
   klAPI <-- the folder which host the spec, I will show you in a moment<br>
-and put my spec into the body, remember to set the fromat to JSON<br>
+and put my spec (prepared in Step1) into the body, remember to set the fromat to JSON<br>
 ![post the spec](https://user-images.githubusercontent.com/107917928/178732840-93c259c3-7736-404d-ac4d-656994189001.png)
+<br>
+Three files are generated a after posting the spec<br>
+|File|Use for|
+|--|--|
+|klAPI.spec.cls| the API spec that we upload<br> you can update this file to modifiy the feature of the API|
+|klAPI.disp.cls| auto generate class file based on the spec<br> it will re-gen after you recomplile the spec class<br> it helps you the call the correct functio in the XXX.impl.cls class file base on the **Method** and **Path**<br> this file seems not for editing|
+|klAPI.impl|auto generate class file based on the spec<br> **Important** it will re-gen after you recomplile the spec class (some of you argeument setting will missing after regen)<br> YOu should edit this class file to implement the function that you would like to achieve|
+
 
