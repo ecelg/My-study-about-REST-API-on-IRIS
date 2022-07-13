@@ -252,6 +252,7 @@ In the following code, you can see that id the prod is not 1 (prod =1 will pass 
 Very easy right?<br> 
 **Important** my **Company** object class should extends the **%JSON.Adaptor**, in order to use the very convinenec**%JSONImport** function.<br>
 <br>
+
 ```
 /// Update existing company given ID and data. Returns updated company<br/>
 /// The method arguments hold values for:<br/>
@@ -305,16 +306,11 @@ ClassMethod EditCompanyById(id As %Integer, body As %Stream.Object, prod As %Boo
     }
 }
 ```
+
 <br>
 After we implemented all of the function in the klAPI.impl.cls, we can test it out by postman
-list the following example
-![image](https://user-images.githubusercontent.com/107917928/178760150-6fd2cf79-2ebf-42ea-acdd-b3d05254b925.png)
+list the following example<br>
+![testupdateCompanybyRESTAPI](https://user-images.githubusercontent.com/107917928/178761815-ab1a4d70-e6bd-4412-acb9-516b910012cb.png)
 
-So now we have
-
-```mermaid
-graph TD;
-    subgraph IRIS;
-      impl.cls ->Company
-    end;
-```
+It's working!<br>
+This is the end of session 1.<br>
