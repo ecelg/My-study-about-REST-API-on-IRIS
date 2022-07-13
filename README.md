@@ -244,9 +244,14 @@ I won't go through the function one by one, so I pick the function **EditCompany
 |Arguments| |
 |--|--|
 |id| id of the company (no default value)|
-|body| data of the compnay in JSON format (no default value)|
-|prod| for swithing the operation to the IRIS Interoperability Production, not using in this session.<br> I set the default value to "". **Important!!** But the defalut value gone after I update the spec. Make sure to write back the default value after you update the spec.|
+|body| input data of the compnay in JSON format from the body of the REST message (no default value)|
+|prod| for switching the operation to the IRIS Interoperability Production, not using in this session.<br> I set the default value to "". **Important!!** But the defalut value gone after I update the spec. Make sure to write back the default value after you update the spec.|
 
+<br>
+In the following code, you can see that id the prod is not 1 (prod =1 will pass to the Session2 part to handel), I open a **Company** object by the id, and that I import the data from the body by using the function **%JSONImport**. and then save the object. The data of the object is then updated.<br>
+Very easy right?<br> 
+**Important** my **Company** object class should extends the **%JSON.Adaptor**, in order to use the very convinenec**%JSONImport** function.<br>
+<br>
 ```
 /// Update existing company given ID and data. Returns updated company<br/>
 /// The method arguments hold values for:<br/>
@@ -299,4 +304,17 @@ ClassMethod EditCompanyById(id As %Integer, body As %Stream.Object, prod As %Boo
 	    }
     }
 }
+```
+<br>
+After we implemented all of the function in the klAPI.impl.cls, we can test it out by postman
+list the following example
+![image](https://user-images.githubusercontent.com/107917928/178760150-6fd2cf79-2ebf-42ea-acdd-b3d05254b925.png)
+
+So now we have
+
+```mermaid
+graph TD;
+    subgraph IRIS;
+      impl.cls ->Company
+    end;
 ```
