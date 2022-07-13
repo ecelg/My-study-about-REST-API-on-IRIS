@@ -66,6 +66,7 @@ Property Description As %String(MAXLEN = 2000);
 Property Remark As %String;
 Property EstablishYear As %Integer;
 }
+
 ```
 You can see that my **Company** class extended 2 objects, %Persistent and %JSON.Adaptor
 - %Persistent allows us to %New() the company objects and %Save() them in the IRIS database
@@ -311,7 +312,8 @@ ClassMethod EditCompanyById(id As %Integer, body As %Stream.Object, prod As %Boo
 
 After we implemented all of the function in the klAPI.impl.cls, we can test it out by postman
 list the following example<br>
-![testupdateCompanybyRESTAPI](https://user-images.githubusercontent.com/107917928/178761815-ab1a4d70-e6bd-4412-acb9-516b910012cb.png)
+![testupdateCompanybyRESTAPI](https://user-images.githubusercontent.com/107917928/178763050-e20cd6de-1226-4dde-9b9e-7d8c2ac47d5a.png)
+
 
 It's working!<br>
 This is the end of session 1.<br>
