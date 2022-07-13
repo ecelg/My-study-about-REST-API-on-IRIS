@@ -184,4 +184,10 @@ So I **Get** the path http://localhost:52773/api/mgmnt/
 
 We can see some information of the interfaces return.. so I assume it should be working.<br>
 <br>
-Now, we can upload our spec!!
+Now, we can upload our spec!!<br>
+**POST** the path to http://localhost:52773/api/mgmnt/v2/KATEDB/klAPI<br>
+  KATEDB <-- Namespace <br>
+  klAPI <-- the folder which host the spec, I will show you in a moment<br>
+and put my spec into the body, remember to set the fromat to JSON<br>
+![post the spec](https://user-images.githubusercontent.com/107917928/178732840-93c259c3-7736-404d-ac4d-656994189001.png)
+
