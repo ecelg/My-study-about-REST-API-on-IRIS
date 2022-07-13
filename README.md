@@ -238,3 +238,65 @@ At the beginning of the code, we have extended 2 classes<br>
 ```
 Class klAPI.impl Extends (%REST.Impl, Ens.Rule.FunctionSet) [ ProcedureBlock ]
 ```
+
+I won't go through the function one by one, so I pick the function **EditCompanyById** as an examply to explain how its work<br>
+
+|Arguments| |
+|--|--|
+|id| id of the company (no default value)|
+|body| data of the compnay in JSON format (no default value)|
+|prod| for swithing the operation to the IRIS Interoperability Production, not using in this session.<br> I set the default value to "". **Important!!** But the defalut value gone after I update the spec. Make sure to write back the default value after you update the spec.|
+
+```
+/// Update existing company given ID and data. Returns updated company<br/>
+/// The method arguments hold values for:<br/>
+///     id, CompanyId<br/>
+///     body, Company Info<br/>
+///     prod<br/>
+ClassMethod EditCompanyById(id As %Integer, body As %Stream.Object, prod As %Boolean = "") As %DynamicObject
+{
+    //(Place business logic here)
+    //Do ..%SetStatusCode(<HTTP_status_code>)
+    //Do ..%SetHeader(<name>,<value>)
+    //Quit (Place response here) ; response may be a string, stream or dynamic object
+    if prod'=1
+    {
+	    try
+	    {
+		    //check if the ID exisit
+		    if '##class(KLlibrary.BObj.Company).%ExistsId(id)
+		    {
+			    do ..%SetStatusCode("400")
+	    		return {"ErrorMessage": "No company with this ID"}
+		    }
+		    
+		    //open the company object with the given ID
+		    set company=##class(KLlibrary.BObj.Company).%OpenId(id)
+		    //fill new Compnay with data from message body
+		    do company.%JSONImport(body)
+		    do company.%Save()
+		    //fill export the compnay data to JSON format
+		    do company.%JSONExportToString(.companyOut)
+		    return companyOut
+	    }
+	    catch(ex)
+	    {
+		    do ..%SetStatusCode("500")
+	    	return {"ErrorMessage": "Server Error"}
+	    }
+    }
+    if prod=1
+    {
+	    //complete the request through the business process
+	    try
+	    {
+		    return ..CallInterface("/company","POST",id,body)
+	    }
+	    catch(ex)
+	    {
+		    do ..%SetStatusCode("500")
+			return {"ErrorMessage": "Failed business process call"}
+	    }
+    }
+}
+```
