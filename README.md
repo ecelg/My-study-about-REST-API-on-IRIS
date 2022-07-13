@@ -192,10 +192,40 @@ and put my spec (prepared in Step1) into the body, remember to set the fromat to
 ![post the spec](https://user-images.githubusercontent.com/107917928/178732840-93c259c3-7736-404d-ac4d-656994189001.png)
 <br>
 Three files are generated a after posting the spec<br>
+<br>
 |File|Use for|
 |--|--|
 |klAPI.spec.cls| the API spec that we upload<br> you can update this file to modifiy the feature of the API|
 |klAPI.disp.cls| auto generate class file based on the spec<br> it will re-gen after you recomplile the spec class<br> it helps you the call the correct functio in the XXX.impl.cls class file base on the **Method** and **Path**<br> this file seems not for editing|
-|klAPI.impl|auto generate class file based on the spec<br> **Important** it will re-gen after you recomplile the spec class (some of you argeument setting will missing after regen)<br> YOu should edit this class file to implement the function that you would like to achieve|
+|klAPI.impl.cls|auto generate class file based on the spec<br> **Important!!**  it will re-gen after you recomplile the spec class (some of you argeument setting will missing after regen)<br> You should edit this class file to implement the function that you would like to achieve|
+
+<br>
+Let's go back to the klAPI.impl.cls file in Step4
+
+### Step3 : create a web application on IRIS
+---------
+This part is quite stright forward <br>
+Open the management portal <br>
+**System Administration > Security > Applications > Web Applications**<br>
+![gotoWebApplication](https://user-images.githubusercontent.com/107917928/178747423-0f9d55f5-e67c-4bb6-b370-819c2e737da0.png) <br>
+**Create New Web Appliction** <br>
+![createanewapplication](https://user-images.githubusercontent.com/107917928/178749213-5ab2a014-a387-43a2-bc6c-eba302ba7de7.png)<br>
+<br>
+Input the **Name** (***Important!*** this will become part of your api URL)<br>
+Choose the **Namespace**<br>
+Check **Enable Application**<br>
+Check **REST** <br>
+Input the **Dispatch Class** classname of the .disp.cls (in my example "klAPI.disp")<br>
+Check the **Allow Authentcation Method**<br>
+Click **Save**<br>
+![createanewapplicationa](https://user-images.githubusercontent.com/107917928/178751116-dccd7fcb-4c53-4842-9e02-7cebb2d78b1e.png)<br>
+<br>
+Yeah!!! This part is finished!
+
+### Step4 : implement the API operation method
+--------
+In this part, you may need a little bit knowledge of the object script or you can do it in Embedded Python (I am sorry I am still laerning about embedded python, but I am sure I will share what I learnt soon)<br>
+I have uploaded my klAPI.impl.cls for you reference. <br>
+You may have a better way to write the function, but I want to take part of my code for discussion here<br>
 
 
