@@ -207,9 +207,11 @@ Let's go back to the klAPI.impl.cls file in Step4
 This part is quite stright forward <br>
 Open the management portal <br>
 **System Administration > Security > Applications > Web Applications**<br>
-![gotoWebApplication](https://user-images.githubusercontent.com/107917928/178747423-0f9d55f5-e67c-4bb6-b370-819c2e737da0.png) <br>
+![gotoWebApplication](https://user-images.githubusercontent.com/107917928/178753660-43c024b8-0815-4694-baea-4c9d76929ecd.png)
+ <br>
 **Create New Web Appliction** <br>
-![createanewapplication](https://user-images.githubusercontent.com/107917928/178749213-5ab2a014-a387-43a2-bc6c-eba302ba7de7.png)<br>
+![createanewapplication](https://user-images.githubusercontent.com/107917928/178753688-e5584a3c-bd87-42ee-b8a7-f45a521d07e0.png)
+<br>
 <br>
 Input the **Name** (***Important!*** this will become part of your api URL)<br>
 Choose the **Namespace**<br>
@@ -218,7 +220,8 @@ Check **REST** <br>
 Input the **Dispatch Class** classname of the .disp.cls (in my example "klAPI.disp")<br>
 Check the **Allow Authentcation Method**<br>
 Click **Save**<br>
-![createanewapplicationa](https://user-images.githubusercontent.com/107917928/178751116-dccd7fcb-4c53-4842-9e02-7cebb2d78b1e.png)<br>
+![createanewapplicationa](https://user-images.githubusercontent.com/107917928/178753721-1f553d2c-c16c-400a-b632-f0c3efbb93fc.png)
+<br>
 <br>
 Yeah!!! This part is finished!
 
