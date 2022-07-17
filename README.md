@@ -225,6 +225,8 @@ Check the **Allow Authentcation Method**<br>
 Click **Save**<br>
 ![createanewapplicationa](https://user-images.githubusercontent.com/107917928/178753721-1f553d2c-c16c-400a-b632-f0c3efbb93fc.png)
 <br>
+![afterstep3looklike](https://user-images.githubusercontent.com/107917928/179402188-2acf09e9-4360-4416-b0b8-d427265eedf3.png)
+
 <br>
 Yeah!!! This part is finished!
 
@@ -314,8 +316,10 @@ ClassMethod EditCompanyById(id As %Integer, body As %Stream.Object, prod As %Boo
 
 After we implemented all of the function in the klAPI.impl.cls, we can test it out by postman
 list the following example<br>
-![testupdateCompanybyRESTAPI](https://user-images.githubusercontent.com/107917928/178763050-e20cd6de-1226-4dde-9b9e-7d8c2ac47d5a.png)
+![testupdateCompanybyRESTAPI](https://user-images.githubusercontent.com/107917928/178763050-e20cd6de-1226-4dde-9b9e-7d8c2ac47d5a.png)<br>
+![afterstep4looklike](https://user-images.githubusercontent.com/107917928/179402368-a5ca06df-cdea-4e7e-a851-d7e8192b74c5.png)<br>
 
 
 It's working!<br>
+
 This is the end of session 1.<br>
