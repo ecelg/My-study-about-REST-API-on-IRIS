@@ -323,3 +323,5 @@ list the following example<br>
 It's working!<br>
 
 This is the end of session 1.<br>
+
+[Link to session 2] (https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/ReadmeSession2.md) <br>
