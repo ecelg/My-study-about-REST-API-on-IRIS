@@ -4,6 +4,16 @@ In the pervious session, we have setup a rest intreface which directly reach the
 ![afterstep4looklike](https://user-images.githubusercontent.com/107917928/179402368-a5ca06df-cdea-4e7e-a851-d7e8192b74c5.png)<br>
 
 In reality, we might not only interested in querying data from IRIS only. Let's consider the following case<br>
+There might me sereval other systems, applications, dbs, UI, files systems, IOT devices, etc connecting to iris at the same time.<br>
+Sometimes, may want to talk to them directly.<br>
+How can we do that? You may simply **Join the Party!!** and let somebody help you to do the<br>
+- message routing (maybe sometime filtering)
+- message translating (you know, you might talk to a non English speaker)
+- message processing (maybe you need to ask A and then B and the gather the answer to figure out what question to ask C....)
+- message processing (maybe your name is Kate when you are talk to your teacher, but KK when you are talking to your friend, sbd need to help you to correct it before the message send out)
+- message recording (you might found out sth important and store it for future reference)
+
+and maybe there are more things sbd can help (it is sth I come up so far)<br>
 ![somebodyhelptocommuncate](https://user-images.githubusercontent.com/107917928/179439916-3808cb3f-97c5-4b68-8fea-994cbf84b9f5.png)
 
 We know that
