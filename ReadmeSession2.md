@@ -41,7 +41,7 @@ In brief <br>
 In the above exmaple, our Postman is the one who trigger the message. <br> 
 In order to join the party, we should try to let the REST message pass to the Business Service Side.<br>
 After that, we can adjust the rounting logic inside the Business Process and it is suppose that my Postman will be able to talk to the other Existing interfaces on IRIS <br>
-Ok... lets start Session 2 and try to **Join the Party**.
+### Ok... lets start Session 2 and try to **Join the Party**.
 
 ## Session 2 - Connect the REST API interface to IRIS production
 -------
@@ -50,4 +50,11 @@ For a beginner like me... It is a pretty hard concept before you learn sth about
 I am trying my best to tell you my understanding about the concept of messaging and **you are welcome to give me feedback**<br>
 **OH!!!** I forgot, other then messaging, there is another concept of adapter...**OMG** ... Maybe I need to explain this one as well.<br>
 <br>
-In this session, a very improtant thing, we **assume that if we can pass our REST request to BS(business service), update the logic on the BPL(business process logic), we can talk to all the existing interfaces in the Production**.
+In this session, a very improtant thing, we **assume that if we can pass our REST request to BS(business service), update the logic on the BPL(business process logic), we can talk to all the existing interfaces in the Production**. <br>
+<br>
+#### What is Adapter
+Just throw away the how to exchange messages betweens different interfaces, it is tooooooo far away from us at this moment.<br>
+Let talk about how can we connect to a interface. (or how to connect to different interfaces)<br>
+
+![aboutadapter](https://user-images.githubusercontent.com/107917928/179452445-3b04fb75-01bb-47c1-9217-f3e462f5711c.png)
+
