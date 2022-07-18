@@ -34,7 +34,7 @@ That's why triggered me to write down sth. I am pretty sure that I will forget t
 | |Session|Description|
 |---|---|---|
 |1| Setup a REST API host interface on IRIS| this allow you to access objects/table in IRIS directly |
-|2| Connect the REST API interface to IRIS production| this allow you to commumate with the other system connected to IRIS within the production environment|
+|2| [Connect the REST API interface to IRIS production](https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/ReadmeSession2.md)| this allow you to commumate with the other system connected to IRIS within the production environment|
 |3| Setup a REST API client interface on IRIS production| this allow the other systems connected to IRIS within the production environment talk to you|
 
 You can easliy learn **Session 1 and 2** from the online learning service from InterSystems by <br>
@@ -322,6 +322,7 @@ list the following example<br>
 
 It's working!<br>
 
-This is the end of session 1.<br>
+### This is the end of session 1.
+<br>
 
-[Link to session 2] (https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/ReadmeSession2.md) <br>
+[Link to session 2](https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/ReadmeSession2.md) <br>
