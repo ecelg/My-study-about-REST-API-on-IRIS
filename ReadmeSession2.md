@@ -55,6 +55,8 @@ In this session, a very improtant thing, we **assume that if we can pass our RES
 #### What is Adapter
 Just throw away the how to exchange messages betweens different interfaces, it is tooooooo far away from us at this moment.<br>
 Let talk about how can we connect to a interface. (or how to connect to different interfaces)<br>
-
+<br>
+The tools is adapter!!<br>
+As we know both BS(business service) and BO(business operations) are both gateway
 ![aboutadapter](https://user-images.githubusercontent.com/107917928/179452445-3b04fb75-01bb-47c1-9217-f3e462f5711c.png)
 
