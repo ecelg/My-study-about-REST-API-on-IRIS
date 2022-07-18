@@ -34,7 +34,7 @@ In brief <br>
 |Object |Description |
 |--|--|
 |Business Service|a gateway waiting message trigger from outide (outside the production)|
-|Business Process|the object that you can design you bussiness (message) flow<br> By making the flow, rules, transformation, lookup, coding, you cn do whatever you want to process the message|
+|Business Process|the object that you can design you bussiness (message) flow<br> By making the flow, rules, transformation, lookup, coding, you can do whatever you want to process the message|
 |Business Operation|a gateway waiting message trigger from inside (inside the production)|
 
 <br>
@@ -44,7 +44,6 @@ After that, we can adjust the rounting logic inside the Business Process and it 
 ### Ok... lets start Session 2 and try to **Join the Party**.
 
 ## Session 2 - Connect the REST API interface to IRIS production
--------
 In this Session, we will try to pass the REST resuest to the Bussiness service of the Production<br>
 For a beginner like me... It is a pretty hard concept before you learn sth about message (I am not sure if I am mastering it correctly so far...) <br>
 I am trying my best to tell you my understanding about the concept of messaging and **you are welcome to give me feedback**<br>
@@ -81,13 +80,22 @@ For the ***HTTP Outbound Adapter***, its sth similar, it pickup the request mess
 When there is respones from the outside, convert the response message to the BO<br>
 <br>
 
-##### For using the inbound adapter, you just simple add the parameter in your BS class<br>
+##### For using the inbound adapter, you just simpily add the parameter in your BS class<br>
 ![Inbound adapter](https://user-images.githubusercontent.com/107917928/179455984-418dbb53-6941-42e6-b34b-f1d534052c0b.png)<br>
 <br>
-##### For using the outbound adapter, you just simple add the parameter in your BO class<br>
+##### For using the outbound adapter, you just simpily add the parameter in your BO class<br>
 ![outboundadapter](https://user-images.githubusercontent.com/107917928/179455995-23a49fc8-ff71-4641-8697-80d172d91944.png)<br>
 <br>
 
 #### Concept about messages
+Message is a key element which help to do the infoamtion exchange between the Business Services, Business Process, and Business Operation<br>
+Basically, there are two kinds of messages<br>
+- Request Message, create by the trigger side
+- Respones Message, create by the response side
+
+In order to make sth happen, a Request Message is a must.<br>
+In a Sync Resquest, a Response is required. (e.g. a REST resuest)<br>
+In a Async Request, a Response is not required. (e.g. export a file)<br>
+![image](https://user-images.githubusercontent.com/107917928/179491675-07c4f991-cb4b-4ba6-9154-7c1b8ecd148b.png)
 
 
