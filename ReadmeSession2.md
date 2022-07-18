@@ -14,5 +14,7 @@ So, who is the somebody in the above picture helping us?
 
 To be frank, I got very confused at the beginning.... The somebody seems to be Ensamble? Interoperability? Production? BS? BP? BO??????<br>
 So many names.....so confusing...<br>
-Let's have a brieft idea here (I am sorry, I am still in the learning stage....)
+Let's have a brieft idea here (I am sorry, I am still in the learning stage....)<br>
+![insdidesomebody](https://user-images.githubusercontent.com/107917928/179446937-65075078-f2ae-41aa-a953-07b33d563f96.png)<br>
+This is what I know so far about somebody, the Interoperability , Production, BS(business service), BP (Business process), BO (Business Operation) .<br>
 ## Session 2 - Connect the REST API interface to IRIS production
