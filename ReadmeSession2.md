@@ -81,9 +81,13 @@ For the ***HTTP Outbound Adapter***, its sth similar, it pickup the request mess
 When there is respones from the outside, convert the response message to the BO<br>
 <br>
 
-For using the inbound adapter, you just simple add the parameter in your BS class<br>
+##### For using the inbound adapter, you just simple add the parameter in your BS class<br>
 ![Inbound adapter](https://user-images.githubusercontent.com/107917928/179455984-418dbb53-6941-42e6-b34b-f1d534052c0b.png)<br>
-For using the outbound adapter, you just simple add the parameter in your BO class<br>
+<br>
+##### For using the outbound adapter, you just simple add the parameter in your BO class<br>
 ![outboundadapter](https://user-images.githubusercontent.com/107917928/179455995-23a49fc8-ff71-4641-8697-80d172d91944.png)<br>
+<br>
+
+#### Concept about messages
 
 
