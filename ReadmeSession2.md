@@ -57,7 +57,7 @@ Just throw away the how to exchange messages betweens different interfaces, it i
 Let talk about how can we connect to a interface. (or how to connect to different interfaces)<br>
 <br>
 The tools is adapter!!<br>
-As we know both BS(business service) and BO(business operations) are both gateways, in order to talk to different kinds of interface, we need to equipt an adapter to the BS or BO.
+As we know both BS(business service) and BO(business operations) are both gateways, in order to talk to different kinds of interface, we need to equipt an adapter to the BS or BO.<br>
 [link to official document](https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/README.md), to me ... only for my reference, I am the type who can only learn from example..... I am so sorry to the technical writter....<br>
 <br>
 ![aboutadapter](https://user-images.githubusercontent.com/107917928/179452445-3b04fb75-01bb-47c1-9217-f3e462f5711c.png)<br>
@@ -71,13 +71,19 @@ That's why I would like to use my way to explain it a little bit more before sta
 - both of the Inbound Adapter and Outbound Adapter can send message from ouside
 
 I think the picture below might give you a better idea about the different between 2 kind of adapter<br>
-Take ***HTTP Inbound Adapter*** as an example, this adapter helps to pickup the HTTP request messages<br>
+Take ***HTTP Inbound Adapter*** as an example, this adapter helps to pickup the HTTP request messages from outside (the production)<br>
 and then pass the messages to our BS(business services). Remeber I mentioned before, BS is the guy who is standing beside the door, waiting the message trigger from ouside (the production).<br>
-After some processing, there maybe a response from BS side and pass to the HTTP Inbound Adapter, which return to the one who make request<br>
+After some processing, there maybe a response from BS side and pass to the HTTP Inbound Adapter, which return a HTTP response message to the one who make request<br>
 
 ![image](https://user-images.githubusercontent.com/107917928/179456446-71edc650-2054-4096-b48d-538181a03793.png)<br>
+<br>
+For the ***HTTP Outbound Adapter***, its sth similar, it pickup the request message for BO(business operation), make a HTTP request messages to the outside (the production).<br>
+When there is respones from the outside, convert the response message to the BO<br>
+<br>
 
-
+For using the inbound adapter, you just simple add the parameter in your BS class<br>
 ![Inbound adapter](https://user-images.githubusercontent.com/107917928/179455984-418dbb53-6941-42e6-b34b-f1d534052c0b.png)<br>
+For using the outbound adapter, you just simple add the parameter in your BO class<br>
 ![outboundadapter](https://user-images.githubusercontent.com/107917928/179455995-23a49fc8-ff71-4641-8697-80d172d91944.png)<br>
+
 
