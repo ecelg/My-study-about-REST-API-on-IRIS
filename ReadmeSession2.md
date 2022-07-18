@@ -57,7 +57,7 @@ Let talk about how can we connect to a interface. (or how to connect to differen
 <br>
 The tools is adapter!!<br>
 As we know both BS(business service) and BO(business operations) are both gateways, in order to talk to different kinds of interface, we need to equipt an adapter to the BS or BO.<br>
-[link to official document](https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/README.md), to me ... only for my reference, I am the type who can only learn from example..... I am so sorry to the technical writter....<br>
+[link to official document](https://docs.intersystems.com/iris20221/csp/docbook/DocBook.UI.Page.cls?KEY=EGIN_options_connectivity), to me ... only for my reference, I am the type who can only learn from example..... I am so sorry to the technical writter....<br>
 <br>
 ![aboutadapter](https://user-images.githubusercontent.com/107917928/179452445-3b04fb75-01bb-47c1-9217-f3e462f5711c.png)<br>
 <br>
