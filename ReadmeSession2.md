@@ -57,6 +57,24 @@ Just throw away the how to exchange messages betweens different interfaces, it i
 Let talk about how can we connect to a interface. (or how to connect to different interfaces)<br>
 <br>
 The tools is adapter!!<br>
-As we know both BS(business service) and BO(business operations) are both gateway
-![aboutadapter](https://user-images.githubusercontent.com/107917928/179452445-3b04fb75-01bb-47c1-9217-f3e462f5711c.png)
+As we know both BS(business service) and BO(business operations) are both gateways, in order to talk to different kinds of interface, we need to equipt an adapter to the BS or BO.
+[link to official document](https://github.com/ecelg/My-study-about-REST-API-on-IRIS/blob/main/README.md), to me ... only for my reference, I am the type who can only learn from example..... I am so sorry to the technical writter....<br>
+<br>
+![aboutadapter](https://user-images.githubusercontent.com/107917928/179452445-3b04fb75-01bb-47c1-9217-f3e462f5711c.png)<br>
+<br>
+**OHHHHHH!!** forgot to tell, there are **2** types of adapter, Inbound Adapter, Outbound Adapter...<br>
+I am sorry to let you know that I got really confunsed between them at the beginning (the BS and BO also). <br>
+That's why I would like to use my way to explain it a little bit more before start doing sth...<br>
+<br>
+**sth important** (which made me confused)
+- both of the Inbound Adapter and Outbound Adapter can send message to ouside
+- both of the Inbound Adapter and Outbound Adapter can send message from ouside
+
+I think the picture below might give you a better idea about the different between 2 kind of adapter<br>
+Take HTTP Inbound Adapter as an example
+![image](https://user-images.githubusercontent.com/107917928/179456446-71edc650-2054-4096-b48d-538181a03793.png)
+
+
+![Inbound adapter](https://user-images.githubusercontent.com/107917928/179455984-418dbb53-6941-42e6-b34b-f1d534052c0b.png)<br>
+![outboundadapter](https://user-images.githubusercontent.com/107917928/179455995-23a49fc8-ff71-4641-8697-80d172d91944.png)<br>
 
