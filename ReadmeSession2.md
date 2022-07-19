@@ -96,6 +96,14 @@ Basically, there are two kinds of messages<br>
 In order to make sth happen, a Request Message is a must.<br>
 In a Sync Resquest, a Response is required. (e.g. a REST resuest)<br>
 In a Async Request, a Response is not required. (e.g. export a file)<br>
-![image](https://user-images.githubusercontent.com/107917928/179491675-07c4f991-cb4b-4ba6-9154-7c1b8ecd148b.png)
+![image](https://user-images.githubusercontent.com/107917928/179491675-07c4f991-cb4b-4ba6-9154-7c1b8ecd148b.png)<br>
+<br>
+Below is what a messgae look like
+- it is simply a %presistant class object, but extending the Ens.Request or Ens.Respond class
+- i.e. every messages (once created) will store into the IRIS database
+- i.e. it is possible to trace the messages, as they are stored
+- i.e. you need to do some storage resourses planning on the message storage
+- and **IMPORTANT** you my need a schedule task to purge the old messages
 
+![aboutmessages](https://user-images.githubusercontent.com/107917928/179669331-6a0c413e-91c7-4f7e-8244-0e4a190441ef.png)<br>
 
