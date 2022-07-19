@@ -107,7 +107,7 @@ Below is what a messgae look like
 
 ![aboutmessages](https://user-images.githubusercontent.com/107917928/179669331-6a0c413e-91c7-4f7e-8244-0e4a190441ef.png)<br>
 <br>
-From the above example, we can see that the message can contain different argument (just lik the request message)<br>
+From the above example, we can see that the message can contain different argument (just like the request message)<br>
 Or, simply contain one string property (just like the respond message)<br>
 <br>
 So... what actually the JSON, XML, SQL.. format means? To be frank, it is really a very very difficult concept to explain....<br>
