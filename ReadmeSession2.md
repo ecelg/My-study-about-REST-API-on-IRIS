@@ -133,6 +133,14 @@ To make it simple, in this task we want to
 - call the IRIS class method from the Business Process inside the production
 - return the result from the production back to the REST interface
 
-Because of lazy, we resued the class method in the Session 1, which us confused.<1>
+Because of lazy, we resued the class method in the Session 1, which us confused.<br>
+<br>
+In this session, we will go through the following steps
+- Step 1: Create the request and response messages
+- Step 2: Setup the production environment
+- Step 3: Create the Business Service
+- Step 4: Create the Business Process
+- Step 5: Update the class method in the impl.cls to pass the REST message to the Business Service (created in Step3)
+- Step 6: Anything else?... maybe just play around and have fun
 
 
