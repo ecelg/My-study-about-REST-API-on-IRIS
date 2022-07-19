@@ -117,5 +117,13 @@ In the picture below, you can see the property of my payload is a String.<br>
 And in the messge I received, in the paylod is a format of JSON<br>
 Maybe, let's say in this way... I said this is a JSON message, it because what is the format of the string present as...<br>
 Very diffuclt to understand? Right?... anyway... I am still learning the way to understand... (sorry)<br>
-![aboutmessagesexample](https://user-images.githubusercontent.com/107917928/179672226-08b162de-000e-4351-879f-de431534c6dc.png)
+![aboutmessagesexample](https://user-images.githubusercontent.com/107917928/179672226-08b162de-000e-4351-879f-de431534c6dc.png)<br>
+
+### OK Let's start!
+I am sorry that I have metion sth side track above... you might know already... but for me it is really difficult concept for me.<br>
+Since I didn't understand before, it took me long long time to understand how to finish the online learning course.<br>
+<br>
+Below is the diagram showing what is going to happen after complete the session 2
+![image](https://user-images.githubusercontent.com/107917928/179704381-695dde64-52f9-46bf-b9e9-d197ba30beea.png)
+
 
