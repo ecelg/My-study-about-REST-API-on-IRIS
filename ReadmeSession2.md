@@ -124,6 +124,6 @@ I am sorry that I have metion sth side track above... you might know already... 
 Since I didn't understand before, it took me long long time to understand how to finish the online learning course.<br>
 <br>
 Below is the diagram showing what is going to happen after complete the session 2
-![image](https://user-images.githubusercontent.com/107917928/179704381-695dde64-52f9-46bf-b9e9-d197ba30beea.png)
+![session2looklike](https://user-images.githubusercontent.com/107917928/179708400-0b363a05-5554-46cc-b7f2-6ced39d4b3ec.png)
 
 
