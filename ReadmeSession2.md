@@ -106,4 +106,16 @@ Below is what a messgae look like
 - and **IMPORTANT** you my need a schedule task to purge the old messages
 
 ![aboutmessages](https://user-images.githubusercontent.com/107917928/179669331-6a0c413e-91c7-4f7e-8244-0e4a190441ef.png)<br>
+<br>
+From the above example, we can see that the message can contain different argument (just lik the request message)<br>
+Or, simply contain one string property (just like the respond message)<br>
+<br>
+So... what actually the JSON, XML, SQL.. format means? To be frank, it is really a very very difficult concept to explain....<br>
+Maybe, I try to show you sth in this way.<br>
+Take my Resuest message as example<br>
+In the picture below, you can see the property of my payload is a String.<br>
+And in the messge I received, in the paylod is a format of JSON<br>
+Maybe, let's say in this way... I said this is a JSON message, it because what is the format of the string present as...<br>
+Very diffuclt to understand? Right?... anyway... I am still learning the way to understand... (sorry)<br>
+![aboutmessagesexample](https://user-images.githubusercontent.com/107917928/179672226-08b162de-000e-4351-879f-de431534c6dc.png)
 
