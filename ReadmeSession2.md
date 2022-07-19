@@ -124,6 +124,15 @@ I am sorry that I have metion sth side track above... you might know already... 
 Since I didn't understand before, it took me long long time to understand how to finish the online learning course.<br>
 <br>
 Below is the diagram showing what is going to happen after complete the session 2
-![session2looklike](https://user-images.githubusercontent.com/107917928/179708400-0b363a05-5554-46cc-b7f2-6ced39d4b3ec.png)
+![session2looklike](https://user-images.githubusercontent.com/107917928/179708400-0b363a05-5554-46cc-b7f2-6ced39d4b3ec.png)<br>
+<br>
+I believe you will get very confused, what are you doing? What is the aim of this task...<br>
+True, at the beginning, I have the same feeling.<br>
+To make it simple, in this task we want to
+- send our REST message from the REST interface into the production
+- call the IRIS class method from the Business Process inside the production
+- return the result from the production back to the REST interface
+
+Because of lazy, we resued the class method in the Session 1, which us confused.<1>
 
 
